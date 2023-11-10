@@ -24,6 +24,7 @@ var HighScoreInput = document.getElementById("HighScoreInput");
 var WinGoBack = document.getElementById("WinGoBack");
 var LoseGoBack = document.getElementById("LoseGoBack");
 var HSGoBack = document.getElementById("HSGoBack");
+var ViewHighScores = document.getElementById("ViewHighScores");
 
 var q1 = ["When was JavaScript Invented?","What is a reference to a value that can be changed called","JS files can be attached to HTML file through which tag?","how many days did JavaScript initially take to develop in 1995?","JavaScript places where on a ranking of most widely used programming languages","Who invented JavaScript?"];
 var q2 = [3,1,4,4,1,2];
@@ -203,4 +204,5 @@ StartBtn.addEventListener("click", startGame);
 WinGoBack.addEventListener("click", init);
 LoseGoBack.addEventListener("click", init);
 HSGoBack.addEventListener("click", init);
+ViewHighScores.addEventListener("click", highScores);
 init();
