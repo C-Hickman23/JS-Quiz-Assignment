@@ -44,12 +44,33 @@
                 </div>
             </section>
 
-            <section id="EndScreen">
-                <h1>You Lose!</h1>
+            <section id="EndScreen" class="card w-75 p-3 m-4 mx-auto">
+                <h1 class="text-center">You Lose!</h1>
+                <h3 class="text-center">Better luck next time!</h3>
+                <button id="LoseGoBack" class="btn btn-primary m-3">Go Back</button>
             </section>
 
-            <section id="WinScreen">
-                <h1>You Win!</h1>
+            <section id="WinScreen" class="card w-75 p-3 m-4 mx-auto">
+                <h1 class="text-center">You Win!</h1>
+                <h3 class="text-center">Your Score: <span id="ScoreInput"></span></h3>
+                <div id="Top5">
+                    <p>You have earned one of the top 5 high scores!</p>
+                    <input id="InitialsInput" type="text" class="m-2" placeholder="Put your Initials Here!">
+                    <br>
+                    <button id="SubmitInitials" class="btn btn-primary m-2">Submit My High Score!</button>
+                </div>
+                <div id="NoTop5">
+                    <p>You didn't place top 5 this time but you can always try again!</p>
+                    <button id="WinGoBack" class="btn btn-primary m-3">Go Back</button>
+                </div>
+            </section>
+
+            <section id="HighScoreScreen" class="card w-75 p-3 m-4 mx-auto">
+                <h3 class="text-center">Top 5 High Scores:</h3>
+                <div class="card w-75 p-3 m-4 mx-auto">
+                    <ul class="list-group list-group-numbered list-group-flush" id="HighScoreInput"></ul>
+                </div>
+                <button id="HSGoBack" class="btn btn-primary m-3">Go Back</button>
             </section>
             <script src="./assets/quiz.js"></script>
         </main>
